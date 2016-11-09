@@ -1,6 +1,6 @@
 {
   "name": "react-portal-simpler",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simplest React portal wrapper component.",
   "main": "lib/index.js",
   "files": [
