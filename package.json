@@ -1,6 +1,6 @@
 {
   "name": "react-portal-simpler",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Simplest React portal wrapper component.",
   "main": "build/index.js",
   "files": [
@@ -23,8 +23,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "babel": {
-    "presets": ["react", "es2015"],
-    "plugins": ["transform-runtime", "transform-es2015-object-super", "transform-decorators-legacy", "transform-class-properties"]
+    "presets": [
+      "react",
+      "es2015"
+    ],
+    "plugins": [
+      "transform-runtime",
+      "transform-es2015-object-super",
+      "transform-decorators-legacy",
+      "transform-class-properties"
+    ]
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
