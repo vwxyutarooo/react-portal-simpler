@@ -1,9 +1,11 @@
 {
   "name": "react-portal-simpler",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simplest React portal wrapper component.",
   "main": "index.js",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "repository": {
     "url": "https://github.com/vwxyutarooo/react-portal-simpler",
     "type": "git"
