@@ -2,9 +2,10 @@
   "name": "react-portal-simpler",
   "version": "0.0.3",
   "description": "Simplest React portal wrapper component.",
-  "main": "lib/index.js",
+  "main": "build/index.js",
   "files": [
-    "lib"
+    "lib",
+    "build"
   ],
   "repository": {
     "url": "https://github.com/vwxyutarooo/react-portal-simpler",
@@ -18,7 +19,7 @@
     "develop:server": "babel-node tools/server.js",
     "develop:webpack": "webpack-dev-server --color --open http://localhost:8080 --hot --inline --content-base ./docs/ --config tools/webpack.config.develop.babel.js",
     "build": "NODE_ENV=production npm run build:webpack",
-    "build:webpack": "webpack --color --progress --config tools/webpack.config.develop.babel.js",
+    "build:webpack": "webpack --color --progress --config tools/webpack.config.production.babel.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "babel": {
@@ -58,6 +59,7 @@
   "dependencies": {
     "deep-assign": "^2.0.0",
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "webpack-merge": "^0.15.0"
   }
 }
