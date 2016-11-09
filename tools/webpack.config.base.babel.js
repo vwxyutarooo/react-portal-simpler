@@ -20,7 +20,7 @@ export default {
     ],
     alias: {}
   },
-  devtool: (!DEVELOP) ? false : 'inline-source-map',
+  devtool: (DEVELOP) ? 'inline-source-map' : false,
   debug: (DEVELOP),
   eslint: {
     configFile: path.join(__dirname, '../', '.eslintrc.json')

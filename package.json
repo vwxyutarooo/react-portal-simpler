@@ -18,14 +18,13 @@
     "develop": "NODE_ENV=development npm run develop:server",
     "develop:server": "babel-node tools/server.js",
     "develop:webpack": "webpack-dev-server --color --open http://localhost:8080 --hot --inline --content-base ./docs/ --config tools/webpack.config.develop.babel.js",
-    "build": "NODE_ENV=production npm run build:webpack",
-    "build:webpack": "webpack --color --progress --config tools/webpack.config.production.babel.js",
+    "build": "mkdir -p build && babel ./lib/* --out-file ./build/index.js",
+    "build:sample": "NODE_ENV=production webpack --color --progress --config tools/webpack.config.production.babel.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "babel": {
-    "presets": [
-      "es2015"
-    ]
+    "presets": ["react", "es2015"],
+    "plugins": ["transform-runtime", "transform-es2015-object-super", "transform-decorators-legacy", "transform-class-properties"]
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
