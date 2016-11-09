@@ -11,6 +11,7 @@
   "author": "vwxyutarooo",
   "license": "MIT",
   "scripts": {
+    "start": "npm run develop",
     "develop": "NODE_ENV=development npm run develop:server",
     "develop:server": "babel-node tools/server.js",
     "develop:webpack": "webpack-dev-server --color --open http://localhost:8080 --hot --inline --content-base ./docs/ --config tools/webpack.config.develop.babel.js",
