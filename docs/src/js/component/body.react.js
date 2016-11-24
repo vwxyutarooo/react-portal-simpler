@@ -19,7 +19,7 @@ export default class Body extends React.Component {
         <h1>React Portal Simpler</h1>
         <Portal>
           <div>
-            <p>Child element</p>
+            <p>Child elements such as Overlay or Modal or Whatever you want.</p>
           </div>
         </Portal>
       </div>
